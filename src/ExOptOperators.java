@@ -14,9 +14,9 @@ public class ExOptOperators {
         int product = var1 * var2 * var3 * var4;
         int modulo = var4 % var2;
 
-        System.out.printf("The sum of values is equal to: %s %n"
-                + "The product of values is equal to: %s %n"
-                + "The modulo of var4 and var2 is equal to: %s %n", sum, product, modulo);
+        System.out.printf("The sum of values is equal to: %d %n"
+                + "The product of values is equal to: %d %n"
+                + "The modulo of var4 and var2 is equal to: %d %n", sum, product, modulo);
 
         //Exercise 2
         /*
@@ -55,9 +55,8 @@ public class ExOptOperators {
         boolean cond1 = sum > 100;
         boolean cond2 = product > 1000;
 
-        System.out.printf("Is sum of the 4 variables higher that 100?  %s %n"
-                + "Is product of the 4 variables higher than 1000? %s %n", cond1, cond2);
-
+        System.out.printf("Is sum of the 4 variables higher that 100?  %b %n"
+                + "Is product of the 4 variables higher than 1000? %b %n", cond1, cond2);
 
         //Exercise 5
         /*
@@ -70,11 +69,12 @@ public class ExOptOperators {
         boolean bothTrue = cond1 && cond2;
 
         if (atLeastOneTrue) {
-            System.out.println("At least one of the conditions is true!");
+            System.out.printf("At least one condition is %b! %n", atLeastOneTrue);
         }
         if (bothTrue) {
-            System.out.println("Both conditions are true!");
-        }
+            System.out.printf("Both conditions are %b! %n", bothTrue);
+        } else if (!atLeastOneTrue && !bothTrue)
+            System.out.println("Neither condition is true!");
     }
 }
 

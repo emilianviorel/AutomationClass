@@ -69,8 +69,12 @@ public class ExOptOperators {
         boolean atLeastOneTrue = cond1 || cond2;
         boolean bothTrue = cond1 && cond2;
 
-        System.out.printf("Is at least one of the conditions true? %s %n"
-                + "Are both conditions true? %s %n", atLeastOneTrue, bothTrue);
+        if (atLeastOneTrue) {
+            System.out.println("At least one of the conditions is true!");
+        }
+        if (bothTrue) {
+            System.out.println("Both conditions are true!");
+        }
     }
 }
 

@@ -79,7 +79,7 @@ public class ExOptCondInstr {
          */
         System.out.println("---Exercise 5---");
 
-        char letter = 'o';
+        char letter = 'a';
 
         switch (letter) {
             case 'a', 'e', 'i', 'o', 'u':
@@ -89,5 +89,10 @@ public class ExOptCondInstr {
                 System.out.printf("%s is a consonant! %n", letter);
         }
 
+        System.out.println("---Exercise 5-IF--");
+
+        if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+            System.out.printf("%s is a vowel! %n", letter);
+        } else System.out.printf("%s is a consonant! %n", letter);
     }
 }

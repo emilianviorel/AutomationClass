@@ -1,3 +1,5 @@
+package moduleA5;
+
 public class Algorithm {
     public static void main(String[] args) {
         //Exercise 1

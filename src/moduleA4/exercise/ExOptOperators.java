@@ -1,3 +1,5 @@
+package moduleA4.exercise;
+
 public class ExOptOperators {
     public static void main(String[] args) {
         //Exercise 1

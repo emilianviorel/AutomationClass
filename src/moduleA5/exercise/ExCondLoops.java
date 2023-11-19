@@ -1,3 +1,5 @@
+package moduleA5.exercise;
+
 public class ExCondLoops {
     public static void main(String[] args) {
         //Exercise 1

@@ -1,3 +1,5 @@
+package moduleA6.exercise;
+
 public class ExJavaMethods {
     public static void main(String[] args) {
         System.out.println("---Exercise 1---");

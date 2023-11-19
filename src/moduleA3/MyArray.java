@@ -1,3 +1,5 @@
+package moduleA3;
+
 public class MyArray {
     public static void main(String[] args) {
 

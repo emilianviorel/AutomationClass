@@ -1,3 +1,5 @@
+package moduleA2.exercise;
+
 public class ExOptPrintInJava {
     public static void main(String[] args) {
         //Ex1

@@ -1,3 +1,5 @@
+package moduleA6;
+
 public class JavaMethods {
     public static void main(String[] args) {
         printHello();

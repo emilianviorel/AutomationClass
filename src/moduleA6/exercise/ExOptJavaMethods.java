@@ -36,7 +36,7 @@ public class ExOptJavaMethods {
 
         System.out.println("---Exercise 7---");
         String string = "Christmas is coming !";
-        System.out.printf("NNumber of characters: %s%n ",
+        System.out.printf("Number of characters: %s%n ",
                 getNumberOfCharacters(string));
 
         System.out.println("---Exercise 8---");

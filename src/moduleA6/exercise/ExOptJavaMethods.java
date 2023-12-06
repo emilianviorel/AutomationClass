@@ -130,7 +130,9 @@ public class ExOptJavaMethods {
     Test the method.
      */
     public static int getNumberOfCharacters(String string) {
-        return string.replace(" ", "").length();
+        //return string.replace(" ", "").length();
+        return string.length();
+
     }
 
     //Exercise 8

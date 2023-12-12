@@ -16,8 +16,18 @@ package moduleA7;
 
 public class Car {
     // Instance variables with default values
-    String make = "BMW";
-    int yearMake = 2000;
+    String make;
+    int yearMake;
+
+    public Car() {
+        make = "BMW";
+        yearMake = 2000;
+    }
+
+    public Car(String make, int yearMake) {
+        this.make = make;
+        this.yearMake = yearMake;
+    }
 
     // Method to get the year make of the car
     public int getYearMake() {

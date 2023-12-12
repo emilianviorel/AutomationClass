@@ -4,12 +4,12 @@ package moduleA7.exercise;
 public class Animal {
 
     // Instance variables to store information about the animal
-    String name;
+    public String name;
     String color;
     boolean vegetarian;
 
     // Default constructor initializing values to default values
-    Animal() {
+    public Animal() {
         name = "unknown";
         color = "unknown";
         vegetarian = false;

@@ -7,6 +7,7 @@ import moduleA8.Student;
 import moduleA8.Swimmer;
 import moduleA8.exercise.Cat;
 import moduleA8.exercise.Dog;
+import moduleA8.exercise.Mammalian;
 
 
 public class MainOOP {
@@ -105,13 +106,28 @@ public class MainOOP {
 
         // Creating instances of classes that implement the Swimmer and Marathoner interfaces
         System.out.println("\n---Athlete Instances---\n");
-        Swimmer swimmer1 = new Swimmer();
-        swimmer1.isTraining();
-        swimmer1.isResting();
 
+        // Creating a Swimmer instance using the default constructor
+        Swimmer swimmer1 = new Swimmer();
+        swimmer1.isTraining(); // Calling the isTraining method for the Swimmer
+        swimmer1.isResting();  // Calling the isResting method for the Swimmer
+
+        // Creating a Marathoner instance using the default constructor
         Marathoner marathoner1 = new Marathoner();
-        marathoner1.isTraining();
-        marathoner1.isResting();
+        marathoner1.isTraining(); // Calling the isTraining method for the Marathoner
+        marathoner1.isResting();  // Calling the isResting method for the Marathoner
+
+        System.out.println("\n---Athlete Instances---\n");
+
+        // Creating a Swimmer instance with specific country and sport
+        Swimmer swimmer2 = new Swimmer("Romania", "100m");
+        swimmer2.isTraining(); // Calling the isTraining method for the Swimmer
+        swimmer2.isResting();  // Calling the isResting method for the Swimmer
+
+        // Creating a Marathoner instance with specific country and sport
+        Marathoner marathoner2 = new Marathoner("Congo", "100m");
+        marathoner2.isTraining(); // Calling the isTraining method for the Marathoner
+        marathoner2.isResting();  // Calling the isResting method for the Marathoner
 
         // Creating instances of the exercise classes
         System.out.println("\n---Exercise ModuleA8---\n");
@@ -121,5 +137,18 @@ public class MainOOP {
 
         britishCat.makeSounds();
         bulldogDog.makeSounds();
+
+        // Creating a Mammalian reference pointing to a Cat object
+        Mammalian cat1 = new Cat(); // cat1 is of type Mammalian but refers to a Cat object
+
+        // Explicitly casting a Cat object to a Mammalian reference
+        Mammalian cat2 = (Mammalian) new Cat(); // This is allowed and works automatically
+
+        // Creating a Mammalian object
+        Mammalian cat3 = new Mammalian(); // cat3 is of type Mammalian
+
+        // Explicitly casting a Mammalian object to a Cat reference
+        //Cat cat4 = (Cat) cat3; // This line will cause a runtime exception (ClassCastException)
+
     }
 }

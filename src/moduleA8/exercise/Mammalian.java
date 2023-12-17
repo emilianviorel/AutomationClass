@@ -11,7 +11,7 @@ public class Mammalian extends Animal {
     public void makeSounds() {
         // Printing a message indicating that the mammalian makes sounds,
         // using the name property from the Animal class
-        System.out.println(this.name + " make sounds");
+        System.out.println(name + " make sounds");
     }
 }
 

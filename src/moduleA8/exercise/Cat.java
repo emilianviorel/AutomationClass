@@ -8,7 +8,7 @@ public class Cat extends Mammalian {
     public void makeSounds() {
         // Printing a message indicating that the cat meows,
         // using the name property from the Mammalian class
-        System.out.println(this.name + " meows");
+        System.out.println(name + " meows");
     }
 }
 

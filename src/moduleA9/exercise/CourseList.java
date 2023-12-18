@@ -1,10 +1,9 @@
 package moduleA9.exercise;
+
+import java.util.ArrayList;
 /* Add a list of courses with the elements: Manual testing, Automated testing, Front-end, Java.
    Display the element on the second position and the length of the list.
    Write a method that displays all the elements. */
-
-import java.util.ArrayList;
-
 
 public class CourseList {
     // Static ArrayList to store the list of courses
@@ -24,14 +23,14 @@ public class CourseList {
         System.out.println("Length of the course list: " + courseList.size());
 
         // Calling the method to display all elements in the list
-        allElements();
+        allElements(courseList);
     }
 
     // Method to display all elements in the course list
-    public static void allElements() {
+    public static void allElements(ArrayList<String> list) {
         // Iterating through the list and printing each element
-        for (String list : courseList) {
-            System.out.println(list);
+        for (String allElements : list) {
+            System.out.println(allElements);
         }
     }
 }
